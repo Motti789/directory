@@ -1,24 +1,14 @@
+import React, { Component } from 'react';
+import Table from './Table'
 
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Hey there let's test this out!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="Container">
+        <Table />
+      </div>
+    )
+  }
 }
 
 export default App;
