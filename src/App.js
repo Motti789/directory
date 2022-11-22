@@ -30,8 +30,10 @@ class App extends Component {
     this.setState({
       characters: characters.filter((character, i) => {
         return i !== index;
+        
       }),
     })
+    alert('Your entry was successfully deleted')
   }
 
    
