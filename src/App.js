@@ -24,13 +24,23 @@ class App extends Component {
     ]
   }
 
+  removeCharacter = (index) => {
+    const { characters } = this.state;
+
+    this.setState({
+      characters: characters.filter((character, i) => {
+        return i !==index
+      }),
+    })
+  }
+
    
 
   render() {
     
     return (
       <div className="Container">
-        <Table characterData={characters} />
+        <Table characterData={characters} removeCharacter={this.removeCharacter} />
       </div>
     )
   }
