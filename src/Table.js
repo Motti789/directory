@@ -20,6 +20,7 @@ const TableHeader = () => {
         </tr>
      ) 
     })
+    
     return  <tbody>{rows}</tbody> 
   }
 
