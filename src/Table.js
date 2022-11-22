@@ -17,6 +17,9 @@ const TableHeader = () => {
         <tr key={index}>
             <td>{row.name}</td>
             <td>{row.job}</td>
+            <td>
+                <button onClick={() => props.removeCharacter(index)}>Delete</button>
+            </td>
         </tr>
      ) 
     })
@@ -25,7 +28,7 @@ const TableHeader = () => {
   }
 
 
-  const table = (props) => {
+  const Table = (props) => {
     
       const { characterData, removeCharacter } = props
   
@@ -38,4 +41,4 @@ const TableHeader = () => {
     }
   
 
-export default Table
+export default Table;
