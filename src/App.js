@@ -19,6 +19,10 @@ class App extends Component {
     alert('Your entry was successfully deleted')
   }
 
+  handleSubmit = (character) => {
+    this.setState({ characters: [...this.state.characters, character] })
+  }
+
    
 
   render() {
@@ -26,7 +30,7 @@ class App extends Component {
     return (
       <div className="Container">
         <Table characterData={characters} removeCharacter={this.removeCharacter} />
-        < Form />
+        < Form handleSubmit={this.handleSubmit} />
       </div>
     )
   }
