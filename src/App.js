@@ -21,6 +21,7 @@ class App extends Component {
 
   handleSubmit = (character) => {
     this.setState({ characters: [...this.state.characters, character] })
+    alert('Your entry was successfully created')
   }
 
    
