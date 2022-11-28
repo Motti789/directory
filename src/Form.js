@@ -33,7 +33,7 @@ handleChange = (event) => {
           
         <label htmlFor="job">Job</label>
         <input type="text" name="job" value={job} onChange={this.handleChange} />
-
+        <input type="button" value="Submit" onClick={this.submitForm} />
       </form>
     );
   }
